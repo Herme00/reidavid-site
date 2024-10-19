@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Buscar Livros - Biblioteca REI DAVID</title>
+    
+    
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img class="logo1" src="img/download.jfif" alt="">
+                <img class="menu-icon" src="img/menu_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.png" alt="" onclick="openmenu()">
+                
+                <h1>REI DAVID</h1>
+                </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="serviços.html">Serviços</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="biblioteca.html">Biblioteca</a></li>
+                    <li><a href="portofolio.html">Eventos</a></li>
+                    <div>
+                    <img class="close-icon" src="img/menu_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.png" alt="" onclick="closemenu()">
+                    </div>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+<section id="destaque" class="section-destaque" style="background-image: url(img/download\ \(5\).jfif);">
+    <div class="destaque-content">
+        <h2>Bem-vindos à Biblioteca REI DAVID</h2>
+        <p>Faça download de todos os livros sobre o seu curso e o mundo da saúde.</p>
+        <button id="exploreButton">Explore Mais</button> 
+    </div>
+</section>
+
+
+
+    <section id="buscar-livros" class="section-buscar-livros">
+        <h2>Buscar Livros</h2>
+        <div class="searchlivrosescolar">
+        <input type="text" id="searchInput" placeholder="Digite o nome do livro ou autor">
+        <button id="searchButton">Buscar</button>
+        </div>
+        <div id="bookResults" class="book-results">
+            <!-- Resultados da busca serão exibidos aqui -->
+        </div>
+    </section>
+    
+<section id="livros" class="section-livros">
+    <h2>Livros Recomendados</h2>
+    <div class="livros-container">
+        
+        <article class="livro-item">
+            <img src="img/download (5).jfif" alt="Notícia 1">
+            <h3>Como ser um vencedor</h3>
+            <p>A escola firmou uma nova parceria com o Hospital Central para estágios dos alunos de enfermagem.</p>
+            <a href="img/" class="button-leia-mais">Baixar</a>
+        </article>
+        <article class="livro-item">
+            <img src="img/download (5).jfif" alt="Notícia 2">
+            <h3>Como ser um vencedor</h3>
+            <p>A escola firmou uma nova parceria com o Hospital Central para estágios dos alunos de enfermagem.</p>
+            <a href="#" class="button-leia-mais">Baixar</a>
+        </article>
+        <article class="livro-item">
+          <img src="img/download (5).jfif" alt="Notícia 2">
+          <h3>Como ser um vencedor</h3>
+          <p>A escola firmou uma nova parceria com o Hospital Central para estágios dos alunos de enfermagem.</p>
+          <a href="#" class="button-leia-mais">Baixar</a>
+      </article>
+      <article class="livro-item">
+        <img src="img/download (5).jfif" alt="Notícia 1">
+        <h3>Como ser um vencedor</h3>
+        <p>A escola firmou uma nova parceria com o Hospital Central para estágios dos alunos de enfermagem.</p>
+        <a href="#" class="button-leia-mais">Baixar</a>
+    </article>
+    <article class="livro-item">
+        <img src="img/download (5).jfif" alt="Notícia 2">
+        <h3>Como ser um vencedor</h3>
+        <p>A escola firmou uma nova parceria com o Hospital Central para estágios dos alunos de enfermagem.</p>
+        <a href="#" class="button-leia-mais">Baixar</a>
+    </article>
+    <article class="livro-item">
+      <img src="img/download (5).jfif" alt="Notícia 2">
+      <h3>Como ser um vencedor</h3>
+      <p>A escola firmou uma nova parceria com o Hospital Central para estágios dos alunos de enfermagem.</p>
+      <a href="#" class="button-leia-mais">Baixar</a>
+  </article>
+  
+    </div>
+</section>
+
+
+    <footer>
+        <p>&copy; 2024 REI DAVID. Todos os direitos reservados.Herme Marketing</p>
+    </footer>
+   
+    <style>
+      * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo básico para o header liso */
+header {
+    background-color: #172279; /* Cor de fundo sólida e elegante */
+    padding: 15px 0; /* Espaçamento interno */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil para dar profundidade */
+}
+
+
+
+
+.section-buscar-livros {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#searchInput {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#searchButton {
+    padding: 10px 20px;
+    background: #172279;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#bookResults {
+    margin-top: 20px;
+}
+
+.book-item {
+    background: #f4f4f4;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.book-item h3 {
+    margin-bottom: 5px;
+}
+
+.book-item p {
+    margin-bottom: 10px;
+}
+
+.book-item a {
+    text-decoration: none;
+    color: #172279;
+    padding: 10px;
+    border: 1px solid #172279;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.book-item a:hover {
+    background: #172279;
+    color: white;
+}
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column; /* Em telas pequenas, organiza verticalmente */
+    }
+
+    nav ul {
+        flex-direction: column; /* Links da nav em pilha */
+        align-items: center; /* Centraliza links */
+        gap: 10px; /* Diminui o espaço entre itens */
+    }
+}
+    </style>
+
+    <script src="biblioteca.js"></script>
+</body>
+</html>

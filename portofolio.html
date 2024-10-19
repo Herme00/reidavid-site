@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Eventos - Rei David</title>
+    
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img class="logo1" src="img/download.jfif" alt="">
+                <img class="menu-icon" src="img/menu_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.png" alt="" onclick="openmenu()">
+                
+                <h1>Rei David
+        
+                </h1>
+                
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="serviços.html">Serviços</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="biblioteca.html">Biblioteca</a></li>
+                    <li><a href="portofolio.html">Eventos</a></li>
+                    <div>
+                    <img class="close-icon" src="img/menu_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.png" alt="" onclick="closemenu()">
+                    </div>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="destaque" class="section-destaque" style="background-image: url(img/download\ \(5\).jfif);">
+        <div class="destaque-content">
+            <h2 style="color: black;">Nossos Eventos</h2>
+            <p style="color: black;">
+                Aqui estão alguns dos projetos realizados por nossos alunos e colaboradores nas áreas de saúde e análises clínicas.</p>
+            <button id="exploreButton">Explore Mais</button>
+        </div>
+    </section>
+
+
+    <section id="eventos" class="section-eventos">
+        <h2>Nossos Eventos</h2>
+        <p>Aqui estão alguns dos projetos realizados por nossos alunos e colaboradores nas áreas de saúde e análises clínicas.Herme Marketing</p>
+        
+        <div class="eventos-container">
+            <section id="eventos-section">
+            <article class="eventos-item">
+                <!---os eventos novos apareceram aqui-->
+            </article>
+            </section>
+            <article class="eventos-item">
+                <img src="img/download (5).jfif" alt="Projeto 1">
+                <h3>Projeto de Simulação Hospitalar</h3>
+                <p>Este projeto visa simular um ambiente hospitalar com todas as condições reais de um hospital.</p>
+                <a href="#" class="button-leia-mais">Leia Mais</a>
+            </article>
+            <article class="eventos-item">
+                <img src="img/download (5).jfif" alt="Projeto 2">
+                <h3>Análise Clínica Avançada</h3>
+                <p>Trabalho prático sobre técnicas avançadas de análises clínicas realizado em nossos laboratórios.</p>
+                <a href="#" class="button-leia-mais">Leia Mais</a>
+            </article>
+            <article class="eventos-item">
+                <img src="img/download (5).jfif" alt="Projeto 3">
+                <h3>Seminário de Enfermagem</h3>
+                <p>Evento organizado pelos alunos do curso de enfermagem, abordando as inovações na área de saúde.</p>
+                <a href="#" class="button-leia-mais">Leia Mais</a>
+            </article>
+        </div>
+    </section>
+
+    <section id="comentarios" class="section-comentarios" style="display: none;">
+        <h2>Comentários</h2>
+        <form id="commentForm">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" required>
+            
+            <label for="comment">Comentário:</label>
+            <textarea id="comment" required></textarea>
+            
+            <button type="submit">Enviar Comentário</button>
+        </form>
+        
+        <div id="commentSection">
+            <h3>Comentários Recentes</h3>
+            <div id="commentList">
+                <!-- Comentários aparecerão aqui -->
+            </div>
+        </div>
+    </section>
+    <section id="criticas" class="section-criticas"></section>
+       <h2 style="text-align: center;">Comentários</h2>
+        <div class="criticas-container">
+            
+            <article class="critica-item">
+                <img src="img/download (5).jfif" alt="Notícia 1">
+                <h3>Hermenegildo Carvalho</h3>
+                <p>A escola firmou uma nova parceria com o Hospital Central para estágios dos alunos de enfermagem.</p>
+                <a href="#" class="button-leia-mais">Leia Mais</a>
+            </article>
+            <article class="critica-item">
+                <img src="img/download (5).jfif" alt="Notícia 2">
+                <h3>Hermenegildo Carvalho</h3>
+                <p>A escola firmou uma nova parceria com o Hospital Central para estágios dos alunos de enfermagem.</p>
+                <a href="#" class="button-leia-mais">Leia Mais</a>
+            </article>
+            <article class="critica-item">
+              <img src="img/download (5).jfif" alt="Notícia 2">
+              <h3>Hermenegildo Carvalho</h3>
+              <p>A escola firmou uma nova parceria com o Hospital Central para estágios dos alunos de enfermagem.</p>
+              <i class="star"></i>
+              <a href="#" class="button-leia-mais">Leia Mais</a>
+          </article>
+          
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Rei David- Eventos. Todos os direitos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+       document.getElementById('commentForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    
+    // Coletar os valores do formulário
+    const name = document.getElementById('name').value;
+    const comment = document.getElementById('comment').value;
+
+    // Criar um novo elemento de comentário
+    const commentSection = document.getElementById('commentList');
+    const newComment = document.createElement('div');
+    newComment.classList.add('comment-item');
+    
+    // Adicionar o conteúdo do comentário
+    newComment.innerHTML = `
+        <h4>${name}</h4>
+        <p>${comment}</p>
+        <small>Comentário adicionado agora mesmo</small>
+    `;
+
+    // Inserir o comentário na seção de comentários
+    commentSection.appendChild(newComment);
+
+    // Limpar o formulário
+    document.getElementById('commentForm').reset();
+});
+
+    </script>
+</body>
+</html>

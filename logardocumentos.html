@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="auth.css">
+    <title>Publicar Notícias</title>
+    
+</head>
+<body>
+    <a href="index.html">Home</a>
+ <section class="section-noticias">
+    <h2>Adicionar Notícia</h2>
+    <form id="noticiaform">
+        <input type="text" id="title" placeholder="Título" required><br><br>
+        <textarea id="content" placeholder="Conteúdo" required></textarea><br><br>
+        <input type="file" id="image" accept="image/*"><br><br>
+        <button type="submit">Publicar Notícia</button>
+    </form>
+</section>
+    <h2>Notícias Publicadas</h2>
+    <div class="news-section" id="news-section"></div>
+
+    <H1>...</H1>
+     <section class="section-livros">
+        <h2>Adicionar livro</h2>
+        <form id="livrosform">
+            <input type="text" id="disciplina" placeholder="Discíplina" required><br><br>
+            <input type="text" id="autor" placeholder="autor" required></input><br><br>
+            <input type="date" id="AnoPublicado" required><br><br>
+            <button type="submit">Publicar LIvro</button>
+        </form>
+    </section>
+        <h2>Livros Publicados</h2>
+        <div class="livros-section" id="livros-section"></div>
+    <H1>...</H1>
+        <section class="section-eventos">
+            <h2>Adicionar evento</h2>
+            <form id="eventosform">
+                <input type="text" id="title" placeholder="Discíplina" required><br><br>
+                <textarea id="content" placeholder="Conteúdo" required></textarea><br><br>
+                <input type="file" id="image" accept="image/*" required><br><br>
+                <button type="submit" onclick="">Publicar LIvro</button>
+            </form>
+        </section>
+            <h2>eventos Publicados</h2>
+            <div class="eventos-section" id="eventos-section"></div>
+        
+        <script src="admin.js">
+           
+        </script>
+    
+</body>
+</html>
